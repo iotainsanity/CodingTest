@@ -82,3 +82,14 @@ C:\Users\calvi\source\repos\CodingTest\CodingTest.API\obj\Debug\CodingTest.API.c
 C:\Users\calvi\source\repos\CodingTest\CodingTest.API\obj\Debug\CodingTest.API.csproj.CopyComplete
 C:\Users\calvi\source\repos\CodingTest\CodingTest.API\obj\Debug\CodingTest.API.dll
 C:\Users\calvi\source\repos\CodingTest\CodingTest.API\obj\Debug\CodingTest.API.pdb
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\obj\Debug\CodingTest.API.csproj.AssemblyReference.cache
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.DataLayer.dll
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.Models.dll
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\EntityFramework.dll
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.DataLayer.pdb
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.DataLayer.dll.config
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.Models.pdb
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\CodingTest.Models.dll.config
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\EntityFramework.xml
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\EntityFramework.SqlServer.dll
+C:\Users\calvi\source\repos\CodingTest\CodingTest.API\bin\EntityFramework.SqlServer.xml

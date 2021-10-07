@@ -90,3 +90,6 @@ C:\Users\calvi\source\repos\CodingTest\CodingTest\obj\Debug\CodingTest.csproj.As
 C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.Models.dll
 C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.Models.pdb
 C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.Models.dll.config
+C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.DataLayer.dll
+C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.DataLayer.pdb
+C:\Users\calvi\source\repos\CodingTest\CodingTest\bin\CodingTest.DataLayer.dll.config

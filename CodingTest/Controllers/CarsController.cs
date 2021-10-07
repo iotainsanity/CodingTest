@@ -4,6 +4,8 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
 using CodingTest.DataLayer.Repositories;
@@ -40,7 +42,7 @@ namespace CodingTest.Controllers
         // GET: Cars/Create
         public ActionResult Create()
         {
-            ViewBag.Color = new SelectList(db.CarColors, "ID", "Color");
+            ViewBag.Color = new SelectList(new CarColorRepository().GetAllCarColor(), "ID", "Color");
             return View();
         }
 
@@ -53,14 +55,28 @@ namespace CodingTest.Controllers
         {
             if (ModelState.IsValid)
             {
-                var carRepository = new CarRepository();
-                carRepository.Insert(car);
+                //var carRepository = new CarRepository();
+                //carRepository.Insert(car);
 
+                if (car.ID == Guid.Empty)
+                    car.ID = Guid.NewGuid();
+
+                string URL = "https://localhost:44388/";
+                string urlParameters = "";
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(URL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpResponseMessage response = client.PostAsJsonAsync("Api/Cars/Create", car).Result;
 
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Color = new SelectList(db.CarColors, "ID", "Color", car.Color);
+            ViewBag.Color = new SelectList(new CarColorRepository().GetAllCarColor(), "ID", "Color", car.Color);
             return View(car);
         }
 
@@ -76,7 +92,7 @@ namespace CodingTest.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Color = new SelectList(db.CarColors, "ID", "Color", car.Color);
+            ViewBag.Color = new SelectList(new CarColorRepository().GetAllCarColor(), "ID", "Color", car.Color);
             return View(car);
         }
 
@@ -92,7 +108,7 @@ namespace CodingTest.Controllers
                 _carRepository.Update(car);
                 return RedirectToAction("Index");
             }
-            ViewBag.Color = new SelectList(db.CarColors, "ID", "Color", car.Color);
+            ViewBag.Color = new SelectList(new CarColorRepository().GetAllCarColor(), "ID", "Color", car.Color);
             return View(car);
         }
 
@@ -119,15 +135,6 @@ namespace CodingTest.Controllers
             _carRepository.Delete(id);
 
             return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }

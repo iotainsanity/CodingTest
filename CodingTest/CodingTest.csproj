@@ -162,6 +162,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CarColorsController.cs" />
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -225,6 +226,11 @@
     <Content Include="Views\Cars\Details.cshtml" />
     <Content Include="Views\Cars\Edit.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\CarColors\Create.cshtml" />
+    <Content Include="Views\CarColors\Delete.cshtml" />
+    <Content Include="Views\CarColors\Details.cshtml" />
+    <Content Include="Views\CarColors\Edit.cshtml" />
+    <Content Include="Views\CarColors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -271,6 +277,9 @@
       <Project>{562ae7e9-1df7-4f38-943d-95eecf1c776e}</Project>
       <Name>CodingTest.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

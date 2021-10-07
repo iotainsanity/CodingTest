@@ -60,3 +60,4 @@ C:\Users\calvi\source\repos\CodingTest\CodingTest.Models\obj\Debug\CodingTest.Mo
 C:\Users\calvi\source\repos\CodingTest\CodingTest.Models\obj\Debug\CodingTest.Models.csproj.CopyComplete
 C:\Users\calvi\source\repos\CodingTest\CodingTest.Models\obj\Debug\CodingTest.Models.dll
 C:\Users\calvi\source\repos\CodingTest\CodingTest.Models\obj\Debug\CodingTest.Models.pdb
+C:\Users\calvi\source\repos\CodingTest\CodingTest.Models\obj\Debug\CodingTest.Models.csproj.AssemblyReference.cache
